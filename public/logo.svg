@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <!-- Metal gradient for text -->
+    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0A0A0;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#D4D4D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#909090;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Metallic shine effect -->
+    <linearGradient id="metalShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="30%" style="stop-color:#D0D0D0;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#A0A0A0;stop-opacity:0.1" />
+      <stop offset="70%" style="stop-color:#B8B8B8;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:0.6" />
+    </linearGradient>
+
+    <!-- Shadow filter for depth -->
+    <filter id="metalShadow" x="-5%" y="-5%" width="115%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#333333" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Inner glow for metallic look -->
+    <filter id="innerGlow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="0" dy="1" result="offsetBlur"/>
+      <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#1a1a2e" rx="15"/>
+
+  <!-- Main text group with overlapping -->
+  <g filter="url(#metalShadow)" font-family="'Arial Black', 'Impact', sans-serif" font-weight="bold" font-size="160">
+
+    <!-- Letter M (slightly behind K) -->
+    <text x="180" y="190" fill="url(#metalGradient)" stroke="#666" stroke-width="2">
+      M
+    </text>
+
+    <!-- Letter K (overlaps M on the right side) -->
+    <text x="240" y="190" fill="url(#metalGradient)" stroke="#666" stroke-width="2">
+      K
+    </text>
+
+  </g>
+
+  <!-- Small decorative diamond/crystal element between M and K -->
+  <g transform="translate(335, 110)">
+    <polygon points="0,-25 15,0 0,25 -15,0" fill="url(#metalGradient)" stroke="#888" stroke-width="1.5" filter="url(#metalShadow)"/>
+    <polygon points="0,-25 15,0 0,0" fill="#E8E8E8" opacity="0.4"/>
+  </g>
+
+  <!-- Full business name below -->
+  <text x="400" y="250" font-family="'Georgia', serif" font-size="32" fill="#C0C0C0" text-anchor="middle" letter-spacing="8" font-weight="bold">
+    METAL KOHINOOR
+  </text>
+
+  <!-- Decorative line under text -->
+  <line x1="200" y1="265" x2="600" y2="265" stroke="url(#metalGradient)" stroke-width="2" opacity="0.6"/>
+
+</svg>

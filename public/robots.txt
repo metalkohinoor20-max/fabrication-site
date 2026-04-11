@@ -1,0 +1,18 @@
+# Allow all bots to crawl main pages
+User-agent: *
+Allow: /
+
+# Block sensitive or irrelevant pages
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Block private/error pages
+Disallow: /not-found
+Disallow: /error
+
+# Crawl delay (optional - good for server)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://metalkohinoor.com/sitemap.xml
+Host: https://metalkohinoor.com
