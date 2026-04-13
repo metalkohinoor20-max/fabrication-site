@@ -3,7 +3,7 @@ export const siteConfig = {
   owner: "Sonu",
   phone: "+919797928168",
   whatsapp: "919797928168",
-  email: "ssonuaseurobondacp@gmail.com",
+  email: "metalkohinoor20@gmail.com",
   location: "Shahid Nagar Metro Station kalyan chownk, Delhi, India",
     addressLine2: "Noida / Gurgaon, India",
   whatsappMsg: "Hi, I would like to enquire about your fabrication services (ACP / Glass / Aluminium). Please share details.",

@@ -1,145 +1,210 @@
 // lib/projects.js
 export const projects = [
   {
-    id: "acp-showroom-noida",
-    title: "Premium ACP Cladding for Commercial Showroom",
-    location: "Noida, Uttar Pradesh",
-    category: "ACP Work",
-    clientType: "Commercial",
-    completion: "2024",
-    showOnHome: true,
-    description: "Modern ACP cladding installed for a commercial showroom with a premium finish, enhancing exterior appeal and durability. The project involved custom-cut panels with precise measurements, ensuring a seamless look that complements the brand's identity.",
-    shortDescription: "Modern ACP cladding for commercial showroom with premium finish.",
-    features: [
-      "Weather Resistant ACP Panels",
-      "Custom Design with Brand Colors",
-      "Long-lasting UV Protected Finish",
-      "Fire-retardant Material",
-      "5-Year Warranty on Installation"
-    ],
-    media: [
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/0f6923b1-dcd9-4538-92ee-27aeee7434bb.jfif", alt: "ACP cladding front view" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/0f6923b1-dcd9-4538-92ee-27aeee7434bb.jfif", alt: "ACP cladding side view" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/0f6923b1-dcd9-4538-92ee-27aeee7434bb.jfif", alt: "Detailed ACP panel joints" }
-    ],
-          
-    seo: {
-      title: "ACP Cladding for Showroom in Noida | Premium Commercial Facade",
-      description: "Premium ACP cladding installation for commercial showroom in Noida. Weather-resistant, modern design with professional finish. Get free quote today!"
-    }
-  },
-  {
-    id: "glass-office-delhi",
-    title: "Modern Glass Office Partition",
-    location: "Delhi, India",
-    category: "Glass Work",
-    clientType: "Office",
-    completion: "2023",
-    showOnHome: true,
-    description: "Installed sleek and modern glass partitions for office interiors, providing a professional and open workspace environment. The installation includes 12mm toughened glass panels with aluminum framing and soundproofing properties.",
-    shortDescription: "Sleek glass partitions for corporate office interiors.",
-    features: [
-      "12mm Toughened Glass",
-      "Noise Reduction Properties",
-      "Elegant Minimalist Look",
-      "Easy Maintenance",
-      "Customizable Framing Options"
-    ],
-    media: [
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/418364df-7887-4192-baf3-4c4056323fa8.jfif", alt: "Glass partition main area" },
-      { type: "video", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/418364df-7887-4192-baf3-4c4056323fa8.jfif", alt: "Glass partition installation process", thumbnail: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/418364df-7887-4192-baf3-4c4056323fa8.jfif" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/418364df-7887-4192-baf3-4c4056323fa8.jfif", alt: "Glass partition meeting room" }
-    ],
-  
-    seo: {
-      title: "Glass Office Partitions in Delhi | Modern Workspace Solutions",
-      description: "Professional glass partition installation for offices in Delhi. Toughened safety glass, soundproofing, and elegant design. Transform your workspace today!"
-    }
-  },
-  {
-    id: "aluminium-windows-gurgaon",
-    title: "Aluminium Sliding Windows for Modern Home",
-    location: "Gurgaon, Haryana",
-    category: "Aluminium Work",
-    clientType: "Residential",
-    completion: "2024",
-      showOnHome: true,
-    description: "High-quality aluminium sliding windows installed for a residential apartment with smooth operation and durability. The windows feature double-track system with mosquito mesh and high-quality rollers for effortless gliding.",
-    shortDescription: "Smooth sliding aluminium windows with mosquito mesh.",
-    features: [
-      "Smooth Gliding Mechanism",
-      "Rust-Proof Powder Coating",
-      "Integrated Mosquito Mesh",
-      "Double Weather Seal",
-      "Low Maintenance Design"
-    ],
-    media: [
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif", alt: "Aluminium sliding windows installed" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif", alt: "Close-up of window hardware" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif", alt: "Window from interior view" }
-    ],
+  id: "hotel-acp-aluminium-work-kashmir",
+
+  title: "Premium ACP & Aluminium Work for Hotel – Kashmir",
+
+  location: "Kashmir",
+
+  category: "Aluminium And ACP Work",
+
+  clientType: "Hotel",
+
+  completion: "July 2025",
+
+  showOnHome: true,
+
+  shortDescription:
+    "Executed high-quality ACP cladding and aluminium framework for a hotel in Kashmir, ensuring durability, modern aesthetics, and weather resistance.",
+
+  description:
+    "This project involved complete ACP cladding and aluminium fabrication work for a hotel property in Kashmir. The objective was to enhance the building’s exterior with a modern, premium finish while ensuring long-term durability in harsh weather conditions.\n\nWe used high-grade ACP sheets along with a strong aluminium support structure to deliver a clean, seamless look. The installation was carried out with precision, maintaining alignment, structural strength, and aesthetic appeal. The final outcome not only improved the visual appearance of the property but also provided protection against environmental factors.",
+
+  features: [
+    "4mm Premium ACP Sheets",
+    "18 Gauge Aluminium Support Structure",
+    "Weather-resistant Exterior Finish",
+    "Strong and Durable Installation",
+    "Modern and Clean Elevation Design"
+  ],
+
+  media: [
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kahsmir%20gulmarg%202.jfif",
+      alt: "Aluminium ACP cladding side view hotel project"
+    },
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kahsmir%20gulmarg%201.jfif",
+      alt: "ACP cladding hotel front elevation in Kashmir"
+    },
    
-    seo: {
-      title: "Aluminium Sliding Windows in Gurgaon | Modern Home Solutions",
-      description: "Premium aluminium sliding windows installation in Gurgaon. Smooth operation, mosquito mesh, and durable finish. Enhance your home with modern windows."
-    }
-  },
-  {
-    id: "shop-front-acp-delhi",
-    title: "Eye-Catching ACP Shop Front Design",
-    location: "Delhi, India",
-    category: "ACP Work",
-    clientType: "Retail",
-    completion: "2023",
-    showOnHome: false,
-    description: "Designed and installed an attractive ACP front for a retail shop, giving a modern and eye-catching appearance. The design incorporates brand colors with backlit signage for enhanced visibility.",
-    shortDescription: "Custom ACP shop front with backlit branding.",
-    features: [
-      "Custom Brand Colors",
-      "Backlit Signage Integration",
-      "Premium Glossy Finish",
-      "Weather Protection",
-      "High Street Visibility"
-    ],
-    media: [
-      { type: "image", url: "/projects/shop-front-1.jpg", alt: "ACP shop front installed" },
-      { type: "image", url: "/projects/shop-front-2.jpg", alt: "Shop front at night with lighting" },
-      { type: "video", url: "/projects/shop-front-video.mp4", alt: "Shop front installation process", thumbnail: "/projects/shop-front-thumb.jpg" }
-    ],
-   
-    seo: {
-      title: "ACP Shop Front Design in Delhi | Retail Store Facade",
-      description: "Custom ACP shop front installation in Delhi. Eye-catching designs with backlit branding. Transform your retail storefront today!"
-    }
-  },
-  {
-    id: "glass-railing-noida",
-    title: "Stylish Glass Railing for Modern Balcony",
-    location: "Noida, Uttar Pradesh",
-    category: "Glass Work",
-    clientType: "Residential",
-    completion: "2024",
-      showOnHome: false,
-    description: "Installed strong and stylish glass railings for a modern home balcony ensuring safety with aesthetics. The system uses 12mm toughened glass with stainless steel standoffs for a clean, frameless look.",
-    shortDescription: "Frameless glass railing with stainless steel fittings.",
-    features: [
-      "Frameless Design",
-      "Stainless Steel Hardware",
-      "12mm Toughened Safety Glass",
-      "Corrosion Resistant",
-      "Unobstructed View"
-    ],
-    media: [
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/5af4f888-f25d-4013-87f1-2e03f06703ef.jfif", alt: "Glass railing installed on balcony" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/5af4f888-f25d-4013-87f1-2e03f06703ef.jfif", alt: "Close-up of stainless steel fittings" },
-      { type: "image", url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/5af4f888-f25d-4013-87f1-2e03f06703ef.jfif", alt: "Glass railing side view" }
-    ],
- 
-    seo: {
-      title: "Glass Railings in Noida | Modern Balcony Solutions",
-      description: "Professional glass railing installation in Noida. Frameless design with stainless steel fittings. Safety, style, and unobstructed views for your balcony."
-    }
+  ],
+
+  seo: {
+    title: "ACP Cladding & Aluminium Work for Hotel in Kashmir | Metal Kohinoor",
+
+    description:
+      "Professional ACP cladding and aluminium fabrication work for a hotel in Kashmir. Durable, weather-resistant and modern exterior solutions by Metal Kohinoor."
   }
+},
+ {
+  id: "hotel-acp-aluminium-pahalgam-kashmir",
+
+  title: "Hotel ACP & Aluminium Work – Pahalgam, Kashmir",
+
+  location: "Pahalgam, Kashmir",
+
+  category: "Aluminium and ACP Work",
+
+  clientType: "Hotel",
+
+  completion: "24-02-2025",
+
+  showOnHome: false,
+
+  shortDescription:
+    "High-quality ACP cladding and aluminium work for a hotel in Pahalgam, delivering a strong, weather-resistant and modern exterior finish.",
+
+  description:
+    "This project involved ACP cladding and aluminium fabrication work for a hotel located in Pahalgam, Kashmir. The goal was to create a durable and visually appealing structure that can withstand harsh weather conditions.\n\nWe used premium 3mm ACP sheets along with a strong aluminium framework to ensure long-term durability and structural strength. The work was completed with precision, focusing on proper alignment, clean finishing, and high-quality installation standards.\n\nThe final outcome provided a modern look with excellent weather resistance, making it ideal for hospitality environments in hilly regions.",
+
+  features: [
+    "3mm Premium ACP Sheets",
+    "18 Gauge Aluminium Framework",
+    "Weather-resistant Structure",
+    "Strong and Durable Build",
+    "Clean and Professional Finishing"
+  ],
+
+  media: [
+    {
+      type: "image",
+      url:"https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kashmir%20pehelgam%202.jfif"
+    },
+    {
+      type: "image",
+      url:"https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kashmir%20pehelgam%201.jfif",
+      alt: "Hotel ACP cladding and aluminium work in Pahalgam Kashmir"
+    },
+  ],
+
+  seo: {
+    title:
+      "Hotel ACP Cladding & Aluminium Work in Pahalgam Kashmir | Metal Kohinoor",
+
+    description:
+      "Professional ACP cladding and aluminium fabrication work for hotels in Pahalgam, Kashmir. Durable, weather-resistant and modern solutions by Metal Kohinoor."
+  }
+},
+  {
+  id: "commercial-mall-acp-aluminium-chandigarh",
+
+  title: "Commercial Mall ACP & Aluminium Work – Chandigarh",
+
+  location: "Chandigarh",
+
+  category: "Aluminium and ACP Work",
+
+  clientType: "Commercial (Mall)",
+
+  completion: "24-03-2025",
+
+  showOnHome: false,
+
+  shortDescription:
+    "ACP cladding and aluminium fabrication work for a commercial mall in Chandigarh, delivering a modern and durable finish for high-traffic areas.",
+
+  description:
+    "This project involved aluminium and ACP fabrication work for a commercial mall in Chandigarh. The objective was to enhance the structure with a clean, modern, and durable finish suitable for a high-footfall commercial environment.\n\nHigh-quality ACP sheets and strong aluminium support were used to ensure long-term durability, structural strength, and resistance to weather conditions. The work was executed with precision, maintaining proper alignment and finishing standards.\n\nThe final result provided an aesthetically appealing and low-maintenance solution, ideal for commercial spaces with multiple retail outlets.",
+
+  features: [
+    "4mm Premium ACP Sheets",
+    "18 Gauge Aluminium Framework",
+    "Durable & Weather-resistant Finish",
+    "Suitable for High-traffic Commercial Areas",
+    "Clean and Modern Appearance"
+  ],
+
+  media: [
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      alt: "ACP and aluminium work in commercial mall Chandigarh"
+    },
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      alt: "Detailed aluminium and ACP finishing work"
+    },
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      alt: "Modern ACP panel installation in mall"
+    }
+  ],
+
+  seo: {
+    title:
+      "Commercial Mall ACP & Aluminium Work in Chandigarh | Metal Kohinoor",
+
+    description:
+      "Expert ACP cladding and aluminium fabrication work for commercial malls in Chandigarh. Durable, modern and high-quality solutions by Metal Kohinoor."
+  }
+},
+{
+  id: "flat-acp-aluminium-ghaziabad",
+
+  title: "Flat ACP & Aluminium Work – Ghaziabad",
+
+  location: "Ghaziabad",
+
+  category: "Aluminium and ACP Work",
+
+  clientType: "Residential (Flat)",
+
+  completion: "",
+
+  showOnHome: false,
+
+  shortDescription:
+    "Durable and waterproof ACP and aluminium work for a residential flat in Ghaziabad with strong build quality and clean finishing.",
+
+  description:
+    "This project included ACP and aluminium work for a residential flat in Ghaziabad. The main focus was to deliver a strong, waterproof, and long-lasting structure with a clean and modern finish.\n\nWe used high-quality 3mm ACP sheets supported by a robust 18 gauge aluminium framework to ensure durability and resistance against environmental factors. Special attention was given to waterproofing, strength, and finishing quality.\n\nThe final result offered a reliable and aesthetically pleasing solution suitable for residential use, combining durability with modern design.",
+
+  features: [
+    "3mm ACP Sheets",
+    "18 Gauge Aluminium Structure",
+    "Waterproof Installation",
+    "Strong and Durable Build",
+    "High-quality Finishing"
+  ],
+
+  media: [
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      alt: "ACP and aluminium work in residential flat Ghaziabad"
+    },
+    {
+      type: "image",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      alt: "Detailed aluminium and ACP finishing work in flat"
+    },
+  ],
+
+  seo: {
+    title:
+      "Flat ACP & Aluminium Work in Ghaziabad | Waterproof ACP Work | Metal Kohinoor",
+
+    description:
+      "Expert ACP and aluminium work for flats in Ghaziabad. Waterproof, strong and high-quality finishing solutions by Metal Kohinoor."
+  }
+},
+  
 ];
 
 // Helper functions for filtering
