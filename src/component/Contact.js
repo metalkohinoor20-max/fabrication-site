@@ -312,15 +312,25 @@ I'd like to get a quote for your services.
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-            <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448193.9510153685!2d76.76356158796289!3d28.644287355948986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin`}
+            {/* <iframe
+              src={`https://www.google.com/maps/place/Metal+Kohinoor/@28.6440837,77.1975795,10z/data=!3m1!4b1!4m6!3m5!1s0xa6e8e186845445ed:0x55925f8c2ca4a716!8m2!3d28.6440837!4d77.1975795!16s%2Fg%2F11z5wpn_b2?hl=en&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D`}
               width="100%"
               height="380"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
               className="border-0 w-full"
-            />
+            /> */}
+          <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.8211962483!2d77.19757949999999!3d28.6440837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6e8e186845445ed%3A0x55925f8c2ca4a716!2sMetal%20Kohinoor!5e0!3m2!1sen!2sin!4v1776101836969!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="border-0 w-full"
+/>
           </div>
         </div>
       </section>

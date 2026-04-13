@@ -50,7 +50,7 @@ const ProjectMedia = ({ media, title }) => {
       {/* Main Display */}
       <div className="relative overflow-hidden rounded-2xl bg-gray-100">
         <div
-          className="relative aspect-[16/9] cursor-pointer"
+          className="relative aspect-square cursor-pointer"
           onClick={() => openModal(currentItem, currentIndex)}
         >
           {currentItem.type === 'video' ? (

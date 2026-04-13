@@ -63,7 +63,7 @@ export const projects = [
 
   completion: "24-02-2025",
 
-  showOnHome: false,
+  showOnHome: true,
 
   shortDescription:
     "High-quality ACP cladding and aluminium work for a hotel in Pahalgam, delivering a strong, weather-resistant and modern exterior finish.",
@@ -82,7 +82,8 @@ export const projects = [
   media: [
     {
       type: "image",
-      url:"https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kashmir%20pehelgam%202.jfif"
+      url:"https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kashmir%20pehelgam%202.jfif",
+      alt: "Hotel ACP cladding and aluminium work in Pahalgam Kashmir"
     },
     {
       type: "image",
@@ -99,61 +100,61 @@ export const projects = [
       "Professional ACP cladding and aluminium fabrication work for hotels in Pahalgam, Kashmir. Durable, weather-resistant and modern solutions by Metal Kohinoor."
   }
 },
-  {
-  id: "commercial-mall-acp-aluminium-chandigarh",
+//   {
+//   id: "commercial-mall-acp-aluminium-chandigarh",
 
-  title: "Commercial Mall ACP & Aluminium Work – Chandigarh",
+//   title: "Commercial Mall ACP & Aluminium Work – Chandigarh",
 
-  location: "Chandigarh",
+//   location: "Chandigarh",
 
-  category: "Aluminium and ACP Work",
+//   category: "Aluminium and ACP Work",
 
-  clientType: "Commercial (Mall)",
+//   clientType: "Commercial (Mall)",
 
-  completion: "24-03-2025",
+//   completion: "24-03-2025",
 
-  showOnHome: false,
+//   showOnHome: false,
 
-  shortDescription:
-    "ACP cladding and aluminium fabrication work for a commercial mall in Chandigarh, delivering a modern and durable finish for high-traffic areas.",
+//   shortDescription:
+//     "ACP cladding and aluminium fabrication work for a commercial mall in Chandigarh, delivering a modern and durable finish for high-traffic areas.",
 
-  description:
-    "This project involved aluminium and ACP fabrication work for a commercial mall in Chandigarh. The objective was to enhance the structure with a clean, modern, and durable finish suitable for a high-footfall commercial environment.\n\nHigh-quality ACP sheets and strong aluminium support were used to ensure long-term durability, structural strength, and resistance to weather conditions. The work was executed with precision, maintaining proper alignment and finishing standards.\n\nThe final result provided an aesthetically appealing and low-maintenance solution, ideal for commercial spaces with multiple retail outlets.",
+//   description:
+//     "This project involved aluminium and ACP fabrication work for a commercial mall in Chandigarh. The objective was to enhance the structure with a clean, modern, and durable finish suitable for a high-footfall commercial environment.\n\nHigh-quality ACP sheets and strong aluminium support were used to ensure long-term durability, structural strength, and resistance to weather conditions. The work was executed with precision, maintaining proper alignment and finishing standards.\n\nThe final result provided an aesthetically appealing and low-maintenance solution, ideal for commercial spaces with multiple retail outlets.",
 
-  features: [
-    "4mm Premium ACP Sheets",
-    "18 Gauge Aluminium Framework",
-    "Durable & Weather-resistant Finish",
-    "Suitable for High-traffic Commercial Areas",
-    "Clean and Modern Appearance"
-  ],
+//   features: [
+//     "4mm Premium ACP Sheets",
+//     "18 Gauge Aluminium Framework",
+//     "Durable & Weather-resistant Finish",
+//     "Suitable for High-traffic Commercial Areas",
+//     "Clean and Modern Appearance"
+//   ],
 
-  media: [
-    {
-      type: "image",
-      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
-      alt: "ACP and aluminium work in commercial mall Chandigarh"
-    },
-    {
-      type: "image",
-      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
-      alt: "Detailed aluminium and ACP finishing work"
-    },
-    {
-      type: "image",
-      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
-      alt: "Modern ACP panel installation in mall"
-    }
-  ],
+//   media: [
+//     {
+//       type: "image",
+//       url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+//       alt: "ACP and aluminium work in commercial mall Chandigarh"
+//     },
+//     {
+//       type: "image",
+//       url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+//       alt: "Detailed aluminium and ACP finishing work"
+//     },
+//     {
+//       type: "image",
+//       url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+//       alt: "Modern ACP panel installation in mall"
+//     }
+//   ],
 
-  seo: {
-    title:
-      "Commercial Mall ACP & Aluminium Work in Chandigarh | Metal Kohinoor",
+//   seo: {
+//     title:
+//       "Commercial Mall ACP & Aluminium Work in Chandigarh | Metal Kohinoor",
 
-    description:
-      "Expert ACP cladding and aluminium fabrication work for commercial malls in Chandigarh. Durable, modern and high-quality solutions by Metal Kohinoor."
-  }
-},
+//     description:
+//       "Expert ACP cladding and aluminium fabrication work for commercial malls in Chandigarh. Durable, modern and high-quality solutions by Metal Kohinoor."
+//   }
+// },
 {
   id: "flat-acp-aluminium-ghaziabad",
 
@@ -186,12 +187,12 @@ export const projects = [
   media: [
     {
       type: "image",
-      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/ghaziabad%20rajbagh.jfif",
       alt: "ACP and aluminium work in residential flat Ghaziabad"
     },
     {
       type: "image",
-      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/b8f5fa9b-12e9-4a83-9072-b6e5c8996b2c.jfif",
+      url: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/ghaziabad%20rajbagh2.jfif",
       alt: "Detailed aluminium and ACP finishing work in flat"
     },
   ],
