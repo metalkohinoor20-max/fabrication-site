@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/config/site';
 export const metadata = {
   title: `${siteConfig.businessName} | Contact Us for Fabrication Services in Delhi NCR`,
   description: 'Get a free quote for ACP cladding, glass partitions, aluminium windows, and UPVC work. Our team responds within 1 hour. Serving Delhi NCR since 10+ years.',
-  keywords: 'contact fabrication services, get quote for ACP work, aluminium windows contact, glass partition delhi, metal fabrication contact, fabrication services noida, upvc windows gurgaon',
+  keywords: 'contact fabrication services, get quote for ACP work, aluminium windows contact, glass partition delhi, metal fabrication contact, fabrication services noida, upvc windows gurgaon, metal kohinoor ,sonu fabricator',
   openGraph: {
     title: `${siteConfig.businessName} | Contact Us for Fabrication Services`,
     description: 'Share your project requirements and get a detailed quote within 1 hour. Free site visit available across Delhi NCR.',

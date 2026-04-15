@@ -6,6 +6,19 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { siteConfig } from '@/lib/config/site'
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 import { projects } from '@/lib/projects'
+
+// ─── TRACKING HELPER ──────────────────────────────────────────────────────────
+const trackButtonClick = (buttonName, metadata = {}) => {
+  // ✅ Pixel tracking only (no CAPI - button clicks have no customer data)
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Contact", {
+      content_name: buttonName,
+      contact_method: "whatsapp",
+      ...metadata,
+    });
+  }
+  console.log(`📍 Button tracked: ${buttonName}`, metadata);
+};
 const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
 const WHATSAPP_MSG = encodeURIComponent(
   siteConfig.whatsappMsg
@@ -22,15 +35,15 @@ const HERO_MEDIA = [
   // { id: 3, link: '/hero/video1.mp4', type: 'Video' },
 ]
 
-const HERO_HEADING    = 'Fabrication Services with Precision & Quality'
+const HERO_HEADING = 'Fabrication Services with Precision & Quality'
 const HERO_SUBHEADING = 'Doors, windows, partitions — tailored solutions for every space.'
 
 const SERVICES = [
-  { icon: '🪟', title: 'Aluminium Work',  desc: 'Lightweight, rust-proof doors, windows and sliding frames built to last.' },
-  { icon: '🧩', title: 'ACP Work',         desc: 'Modern front elevation panels for shops, malls and commercial spaces.' },
-  { icon: '🔲', title: 'Glass Work',       desc: 'Toughened glass doors, office cabins and stylish shower enclosures.' },
-  { icon: '🧱', title: 'Partition Work',   desc: 'Divide spaces cleanly with aluminium, glass or wooden partitions.' },
-  { icon: '🚪', title: 'UPVC Work',        desc: 'Soundproof, waterproof windows and doors with minimal maintenance.' },
+  { icon: '🪟', title: 'Aluminium Work', desc: 'Lightweight, rust-proof doors, windows and sliding frames built to last.' },
+  { icon: '🧩', title: 'ACP Work', desc: 'Modern front elevation panels for shops, malls and commercial spaces.' },
+  { icon: '🔲', title: 'Glass Work', desc: 'Toughened glass doors, office cabins and stylish shower enclosures.' },
+  { icon: '🧱', title: 'Partition Work', desc: 'Divide spaces cleanly with aluminium, glass or wooden partitions.' },
+  { icon: '🚪', title: 'UPVC Work', desc: 'Soundproof, waterproof windows and doors with minimal maintenance.' },
 ]
 
 const PROJECTS = projects.filter(project => project.showOnHome)
@@ -40,34 +53,35 @@ const PROJECTS = projects.filter(project => project.showOnHome)
     desc: p.shortDescription,
     src: p.media[0].url,
     alt: p.media[0].alt
-  })) 
+  }))
 
 
 const TESTIMONIALS = [
-  { id: 1, name: 'Rahul Sharma',  location: 'Meerut',     rating: 5, text: 'The glass partition for our office was executed perfectly. Great quality and timely delivery.' },
-  { id: 2, name: 'Priya Gupta',   location: 'Delhi',      rating: 5, text: 'Our shop\'s ACP front looks exactly how we imagined. Clean finish and professional work.' },
-  { id: 3, name: 'Mohit Verma',   location: 'Ghaziabad',  rating: 4, text: 'Installed UPVC windows — the soundproofing is impressive. Smooth experience overall.' },
+  { id: 1, name: 'Rahul Sharma', location: 'Meerut', rating: 5, text: 'The glass partition for our office was executed perfectly. Great quality and timely delivery.' },
+  { id: 2, name: 'Priya Gupta', location: 'Delhi', rating: 5, text: 'Our shop\'s ACP front looks exactly how we imagined. Clean finish and professional work.' },
+  { id: 3, name: 'Mohit Verma', location: 'Ghaziabad', rating: 4, text: 'Installed UPVC windows — the soundproofing is impressive. Smooth experience overall.' },
 ]
 
 const STATS = [
   { value: siteConfig.stats.projects, label: 'Projects Completed' },
   { value: siteConfig.stats.experience, label: 'Years of Experience' },
-  { value: siteConfig.stats.citiesServed,    label: 'Cities Served' },
+  { value: siteConfig.stats.citiesServed, label: 'Cities Served' },
   { value: siteConfig.stats.satisfaction, label: 'Quality Guaranteed' },
 ]
 
 // ─── SHARED COMPONENTS ────────────────────────────────────────────────────────
 
-const WhatsAppButton = ({ label = 'Get Free Quote', className = '' }) => (
+const WhatsAppButton = ({ label = 'Get Free Quote', className = '', onClick }) => (
   <Link
     href={WA_LINK}
     target="_blank"
     rel="noopener noreferrer"
+    onClick={() => onClick?.()}
     className={`inline-flex items-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-green-600 active:scale-95 ${className}`}
   >
-    
+
     {/* use svg from public */}
-    <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
+    <Image src="/whiteWhatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0 " />
     {label}
   </Link>
 )
@@ -122,7 +136,7 @@ const HeroSection = () => {
   }, [currentIndex, next])
 
   return (
-      <section className="relative overflow-hidden bg-neutral-950 content-visibility-auto">
+    <section className="relative overflow-hidden bg-neutral-950 content-visibility-auto">
       {/* Slides */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -150,7 +164,7 @@ const HeroSection = () => {
           {HERO_SUBHEADING}
         </p>
         <div className="hidden md:flex mt-8  flex-wrap justify-center gap-4">
-          <WhatsAppButton label="Get Free Quote" />
+          <WhatsAppButton label="Get Free Quote" onClick={() => trackButtonClick("Get Free Quote Button - Hero")} />
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/10"
@@ -185,9 +199,8 @@ const HeroSection = () => {
                 key={i}
                 onClick={() => goTo(i)}
                 aria-label={`Go to slide ${i + 1}`}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === currentIndex ? 'w-6 bg-green-600' : 'w-2 bg-gray-400 hover:bg-gray-600'
-                }`}
+                className={`h-2 rounded-full transition-all duration-300 ${i === currentIndex ? 'w-6 bg-green-600' : 'w-2 bg-gray-400 hover:bg-gray-600'
+                  }`}
               />
             ))}
           </div>
@@ -226,6 +239,7 @@ const ServiceCard = ({ icon, title, desc }) => (
         href={WA_LINK}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackButtonClick("Get Quote Button - Service Card", { service_category: title })}
         className="inline-flex items-center justify-center rounded-lg bg-green-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-green-600 active:scale-95"
       >
         Get Quote
@@ -264,6 +278,7 @@ const PortfolioCard = ({ title, desc, src, alt, id }) => (
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackButtonClick("Get Quote Button - Portfolio Card", { project_id: id })}
           className="pointer-events-auto inline-block rounded-lg bg-green-500 px-4 py-1.5 text-sm font-medium text-white transition hover:bg-green-600"
         >
           Get Quote
@@ -380,6 +395,7 @@ const page = () => {
             <Link
               href={WA_LINK}
               target="_blank"
+              onClick={() => trackButtonClick("Get Quote Button - CTA Section")}
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-green-700 shadow-xl transition hover:bg-green-50 active:scale-95"
             >
@@ -429,12 +445,13 @@ const page = () => {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
-                href={`tel:+91${siteConfig.phone.replace(/^\+/, '')}`}
+                href={`tel:${siteConfig.phone.replace(/^\+/, '')}`}
+                onClick={() => trackButtonClick("Call Now Button")}
                 className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 transition hover:border-gray-500 hover:bg-gray-100"
               >
                 📞 Call Now
               </Link>
-              <WhatsAppButton label="WhatsApp Us" />
+              <WhatsAppButton label="WhatsApp Us" onClick={() => trackButtonClick("WhatsApp Us Button")} />
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-800"

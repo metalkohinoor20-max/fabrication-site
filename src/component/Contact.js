@@ -6,10 +6,10 @@ import Image from "next/image"
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
 const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
-const PHONE_DISPLAY   = siteConfig.phone
-const EMAIL           = siteConfig.email
-const ADDRESS_LINE1   = siteConfig.location
-const ADDRESS_LINE2   = siteConfig.addressLine2
+const PHONE_DISPLAY = siteConfig.phone
+const EMAIL = siteConfig.email
+const ADDRESS_LINE1 = siteConfig.location
+const ADDRESS_LINE2 = siteConfig.addressLine2
 
 const WHATSAPP_MSG = encodeURIComponent(
   siteConfig.whatsappMsg
@@ -74,19 +74,34 @@ const ContactPage = () => {
     e.preventDefault()
     const { name, phone, service, message } = formData
 
+    // ✅ Pixel
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead");
+    }
+
+    // ✅ CAPI (ye wahi fetch hai)
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        phone,
+        service,
+        message,
+      }),
+    });
+
+    // ✅ WhatsApp open
     const text = `Hi Sonu Fabrication! 👋
-
-I'd like to get a quote for your services.
-
-*Name:* ${name}
-*Phone:* ${phone}
-*Service Needed:* ${service || "Not specified"}
-*Message:* ${message}`
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Message: ${message}`
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
     window.open(url, "_blank")
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 4000)
   }
 
   return (
@@ -217,7 +232,7 @@ I'd like to get a quote for your services.
                       <>✅ Sent! WhatsApp should be open now.</>
                     ) : (
                       <>
-                       <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
+                        <Image src="/whiteWhatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0 " />
                         Send via WhatsApp
                       </>
                     )}
@@ -275,7 +290,7 @@ I'd like to get a quote for your services.
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-4 py-3 text-sm font-semibold text-white hover:bg-green-600 transition active:scale-95"
                 >
-                 <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
+                  <Image src="/whiteWhatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0 " />
                   Open WhatsApp
                 </Link>
               </div>
@@ -287,10 +302,17 @@ I'd like to get a quote for your services.
                   <h3 className="text-base font-semibold text-gray-900">Call Us Directly</h3>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
-                  Mon–Sat, 9 AM to 7 PM. Our team will answer your questions on the spot.
+                  {siteConfig.working_hours}. Our team will answer your questions on the spot.
                 </p>
                 <Link
                   href={`tel:+91${WHATSAPP_NUMBER}`}
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.fbq) {
+                      window.fbq("track", "Contact", {
+                        content_name: "Phone Call Click",
+                      });
+                    }
+                  }}
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-300 px-4 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition active:scale-95"
                 >
                   📞 {PHONE_DISPLAY}
@@ -321,16 +343,16 @@ I'd like to get a quote for your services.
               referrerPolicy="no-referrer-when-downgrade"
               className="border-0 w-full"
             /> */}
-          <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.8211962483!2d77.19757949999999!3d28.6440837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6e8e186845445ed%3A0x55925f8c2ca4a716!2sMetal%20Kohinoor!5e0!3m2!1sen!2sin!4v1776101836969!5m2!1sen!2sin"
-  width="600"
-  height="450"
-  style={{ border: 0 }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  className="border-0 w-full"
-/>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.8211962483!2d77.19757949999999!3d28.6440837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6e8e186845445ed%3A0x55925f8c2ca4a716!2sMetal%20Kohinoor!5e0!3m2!1sen!2sin!4v1776101836969!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="border-0 w-full"
+            />
           </div>
         </div>
       </section>
@@ -355,9 +377,17 @@ I'd like to get a quote for your services.
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== "undefined" && window.fbq) {
+                  window.fbq("track", "Contact", {
+                    content_name: "Get Quote Button",
+                    contact_method: "whatsapp",
+                  });
+                }
+              }}
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-green-700 shadow-xl hover:bg-green-50 transition active:scale-95"
             >
-               <Image src="/whatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
+              <Image src="/whatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0 " />
               Get Quote on WhatsApp
             </Link>
             <Link

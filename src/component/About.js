@@ -14,6 +14,20 @@ import {
   Wrench,
 } from "lucide-react"
 import { siteConfig } from "@/lib/config/site"
+
+// ─── TRACKING HELPER ──────────────────────────────────────────────────────────
+const trackButtonClick = (buttonName, metadata = {}) => {
+  // ✅ Pixel tracking only (no CAPI - button clicks have no customer data)
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Contact", {
+      content_name: buttonName,
+      contact_method: "whatsapp",
+      ...metadata,
+    });
+  }
+  console.log(`📍 Button tracked: ${buttonName}`, metadata);
+};
+
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
 const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
@@ -342,6 +356,7 @@ const About = () => {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackButtonClick("Floating WhatsApp Button - About")}
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-green-700 shadow-xl transition hover:bg-green-50 active:scale-95"
             >
               <Image src="/whatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />

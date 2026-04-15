@@ -1,22 +1,38 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import { siteConfig } from '@/lib/config/site'
+
+// ─── TRACKING HELPER ──────────────────────────────────────────────────────────
+const trackButtonClick = (buttonName, metadata = {}) => {
+  // ✅ Pixel tracking only (no CAPI - button clicks have no customer data)
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Contact", {
+      content_name: buttonName,
+      contact_method: "whatsapp",
+      ...metadata,
+    });
+  }
+  console.log(`📍 Button tracked: ${buttonName}`, metadata);
+};
+
 const WhatSappButton = () => {
-   
-    
-      const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
-const WHATSAPP_MSG = encodeURIComponent(
-  siteConfig.whatsappMsg
-)
-const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
+
+
+  const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
+  const WHATSAPP_MSG = encodeURIComponent(
+    siteConfig.whatsappMsg
+  )
+  const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
   return (
     <div>
-          {/* ── FLOATING WHATSAPP BUTTON ── */}
+      {/* ── FLOATING WHATSAPP BUTTON ── */}
       <Link
         href={WA_LINK}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
+        onClick={() => trackButtonClick("Floating WhatsApp Button - Fixed")}
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition hover:bg-green-600 active:scale-95"
       >
         <svg className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">

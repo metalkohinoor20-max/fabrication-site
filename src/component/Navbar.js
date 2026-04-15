@@ -46,20 +46,16 @@ const Navbar = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-3 flex items-center justify-between z-50"> 
 
         {/* ── Brand ── */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          {/* <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-green-500 shadow-sm group-hover:bg-green-600 transition">
-            <span className="text-white font-bold text-sm">
-              {BRAND_NAME.charAt(0)}{BRAND_NAME.lastIndexOf(' ') > 0 ? BRAND_NAME.charAt(BRAND_NAME.lastIndexOf(' ') + 1) : ''}
-
-            </span>
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="text-sm font-bold text-gray-900">{BRAND_NAME}</span>
-            <span className="text-[10px] text-gray-500 tracking-wide">{BRAND_TAGLINE}</span>
-          </div> */}
-
-          <Image src="/logo2.png" alt={BRAND_NAME} width={40} height={40} className="shrink-0 " />
-        </Link>
+     <Link href="/" className="flex items-center gap-2.5 group">
+  <Image
+    src="/logo.png"
+    alt={BRAND_NAME}
+    width={160}
+    height={80}
+    className="h-15 w-auto object-contain"
+    priority
+  />
+</Link>
 
         {/* ── Desktop Links ── */}
         <ul className="hidden md:flex items-center gap-1">

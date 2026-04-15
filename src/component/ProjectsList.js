@@ -229,6 +229,14 @@ const ProjectsClient = ({ initialProjects, categories, locations }) => {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Contact", {
+        content_name: "Get Quote Button",
+        contact_method: "whatsapp",
+      });
+    }
+  }}
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-green-700 shadow-xl transition hover:bg-green-50"
             >
               <Image src="/whatsapp.svg" alt="WhatsApp" width={20} height={20} />

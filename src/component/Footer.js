@@ -1,15 +1,16 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import { siteConfig } from '@/lib/config/site'
 import Image from 'next/image'
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
-const BRAND_NAME    = siteConfig.businessName
+const BRAND_NAME = siteConfig.businessName
 const BRAND_TAGLINE = siteConfig.location
-const BRAND_DESC    = siteConfig.description
+const BRAND_DESC = siteConfig.description
 
-const PHONE   = siteConfig.phone
-const EMAIL   = siteConfig.email
+const PHONE = siteConfig.phone
+const EMAIL = siteConfig.email
 const ADDRESS = siteConfig.location
 
 const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
@@ -19,19 +20,19 @@ const WHATSAPP_MSG = encodeURIComponent(
 const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
 
 const QUICK_LINKS = [
-  { label: 'Home',      href: '/' },
-  { label: 'Services',  href: '/services' },
-  { label: 'Projects',  href: '/projects' },
-  { label: 'About Us',  href: '/about' },
-  { label: 'Contact',   href: '/contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 const SERVICE_LINKS = [
   { label: 'Aluminium Work', href: '/services?section=aluminium-work' },
-  { label: 'ACP Work',       href: '/services?section=acp-work' },
-  { label: 'Glass Work',     href: '/services?section=glass-work' },
+  { label: 'ACP Work', href: '/services?section=acp-work' },
+  { label: 'Glass Work', href: '/services?section=glass-work' },
   { label: 'Partition Work', href: '/services?section=partition-work' },
-  { label: 'UPVC Work',      href: '/services?section=upvc-work' },
+  { label: 'UPVC Work', href: '/services?section=upvc-work' },
 ]
 
 const SOCIAL_LINKS = [
@@ -150,7 +151,19 @@ const Footer = () => {
                 <span className="text-green-500 mt-0.5 text-base">📞</span>
                 <div>
                   <p className="text-xs text-gray-500">Call / WhatsApp</p>
-                  <Link href={`tel:${PHONE}`} className="text-sm font-medium text-gray-800 hover:text-green-600 transition">{PHONE}</Link>
+                  <Link
+                    href={`tel:${PHONE}`}
+                    onClick={() => {
+                      if (typeof window !== "undefined" && window.fbq) {
+                        window.fbq("track", "Contact", {
+                          content_name: "Phone Call Click",
+                        });
+                      }
+                    }}
+                    className="text-sm font-medium text-gray-800 hover:text-green-600 transition"
+                  >
+                    {PHONE}
+                  </Link>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
@@ -174,7 +187,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-green-500 px-4 py-2 text-sm font-semibold text-white hover:bg-green-600 transition active:scale-95"
             >
-               <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " /> WhatsApp Us
+              <Image src="/whiteWhatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0 " /> WhatsApp Us
             </Link>
           </div>
 

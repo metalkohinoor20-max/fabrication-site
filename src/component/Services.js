@@ -6,6 +6,20 @@ import Link from "next/link"
 import { CheckCircle, ChevronDown, ChevronUp } from "lucide-react"
 import { siteConfig } from "@/lib/config/site"
 import { Suspense } from "react"
+
+// ─── TRACKING HELPER ──────────────────────────────────────────────────────────
+const trackButtonClick = (buttonName, metadata = {}) => {
+  // ✅ Pixel tracking only (no CAPI - button clicks have no customer data)
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Contact", {
+      content_name: buttonName,
+      contact_method: "whatsapp",
+      ...metadata,
+    });
+  }
+  console.log(`📍 Button tracked: ${buttonName}`, metadata);
+};
+
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 
 const WHATSAPP_NUMBER = siteConfig.whatsapp.replace(/^\+/, '')
@@ -274,6 +288,7 @@ const ServiceSection = ({ service, index }) => {
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackButtonClick("Get Free Quote Button - Services Card", { service_id: id })}
                 className="inline-flex items-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-600 transition active:scale-95"
               >
                 <Image src="/whiteWhatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />
@@ -435,6 +450,7 @@ const ServicesPage = () => {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackButtonClick("Chat on WhatsApp Button - Services CTA")}
               className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-green-700 shadow-xl hover:bg-green-50 transition active:scale-95"
             >
           <Image src="/whatsapp.svg" alt="WhatsApp"  width={20} height={20} className="shrink-0 " />

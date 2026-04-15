@@ -16,6 +16,8 @@ export const metadata = {
     `aluminium doors windows ${siteConfig.location}`,
     `fabrication contractor ${siteConfig.location}`,
     `${siteConfig.businessName} about`,
+    "metal kohinoor",
+    "sonu fabricator"
   ],
   openGraph: {
     title: `About ${siteConfig.businessName} — ${siteConfig.stats.experience} Years of Precision Fabrication`,
@@ -45,7 +47,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: `${siteConfig.businessName}`,
   description:
-    `Professional aluminium, ACP cladding and glass fabrication services across ${siteConfig.location} with ${siteConfig.stats.experience}+ years of experience.`,
+    `Professional aluminium, ACP cladding and glass fabrication services across ${siteConfig.location} with ${siteConfig.stats.experience}+ years of experience.metal kohinoor`,
   telephone: `${siteConfig.phone}`,
   email: `${siteConfig.email}`,
   address: {
