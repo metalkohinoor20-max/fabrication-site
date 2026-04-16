@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: `About ${siteConfig.businessName} — ${siteConfig.stats.experience} Years of Precision Fabrication`,
     description:
-      `Trusted aluminium, ACP and glass fabrication contractor serving ${siteConfig.location}. ${siteConfig.stats.projects} projects delivered with quality guaranteed.`,
+      `Trusted aluminium, ACP and glass fabrication contractor serving ${siteConfig.location}. ${siteConfig.stats.projects} projects completed with quality guaranteed.`,
     url: "https://sonufabrication.com/about",
     siteName: `${siteConfig.businessName}`,
     locale: "en_IN",

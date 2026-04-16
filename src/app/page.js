@@ -4,7 +4,7 @@ import Home from '@/component/Home';
 import { servicesSchema ,testimonialsList,siteConfig } from '@/lib/config/site';
 export const metadata = {
   title: `${siteConfig.businessName} | Premium Fabrication Services in Delhi NCR`,
-  description: `${siteConfig.description} ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects delivered. Specialists in ACP cladding, glass partitions, aluminium windows & UPVC work. Free quote within 1 hour.`,
+  description: `${siteConfig.description} ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects completed. Specialists in ACP cladding, glass partitions, aluminium windows & UPVC work. Free quote within 1 hour.`,
   keywords: `fabrication services delhi, acp cladding noida, glass partition gurgaon, aluminium windows delhi, upvc work, metal fabrication, shop front fabrication, aluminium door manufacturer, glass railing installation`,
   openGraph: {
     title: `${siteConfig.businessName} | Professional Fabrication Services Delhi NCR`,

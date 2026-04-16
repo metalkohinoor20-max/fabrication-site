@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/config/site';
 import { servicesSchema } from '@/lib/config/site';
 export const metadata = {
   title: `Fabrication Services | ${siteConfig.businessName} - ACP, Glass, Aluminium, UPVC`,
-  description: `Professional ${siteConfig.services.join(', ')} services in Delhi NCR. ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects delivered. Free site visit & quote within 1 hour.`,
+  description: `Professional ${siteConfig.services.join(', ')} services in Delhi NCR. ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects completed. Free site visit & quote within 1 hour.`,
   keywords: 'fabrication services delhi, acp cladding services, glass partition installation, aluminium windows delhi, upvc windows gurgaon, shop front fabrication, metal work services',
   openGraph: {
     title: `Fabrication Services | ${siteConfig.businessName} - ACP, Glass, Aluminium & UPVC`,

@@ -33,7 +33,7 @@ const WA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`
 const HERO = {
   badge:    "Aluminium • ACP • Glass • UPVC • Partition",
   heading:  "Complete Fabrication Services",
-  subtext:  `Professional installation across Delhi, Noida & Gurgaon. ${siteConfig.stats.experience} of experience, ${siteConfig.stats.projects} projects delivered.`,
+  subtext:  `Professional installation across Delhi, Noida & Gurgaon. ${siteConfig.stats.experience} of experience, ${siteConfig.stats.projects} projects completed.`,
 }
 
 // ─── SERVICES DATA ────────────────────────────────────────────────────────────
@@ -189,7 +189,7 @@ const SERVICES = [
 
 const WHY_US = [
   { icon: "🏆", title: `${siteConfig.stats.experience} Experience`,     desc: "A decade of professional fabrication work across Delhi-NCR." },
-  { icon: "✅", title: `${siteConfig.stats.projects} Projects Delivered`,   desc: "Residential, commercial and industrial projects of all sizes." },
+  { icon: "✅", title: `${siteConfig.stats.projects} Projects completed`,   desc: "Residential, commercial and industrial projects of all sizes." },
   { icon: "🔧", title: "In-house Installation",     desc: "Our own skilled team — no subcontracting, full quality control." },
   { icon: "💬", title: "1-Hour Quote Response",     desc: "Send requirements on WhatsApp and get a quote within the hour." },
   { icon: "📋", title: "Transparent Pricing",       desc: "No hidden charges. Clear breakdowns before work begins." },

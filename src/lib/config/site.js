@@ -17,7 +17,7 @@ export const siteConfig = {
   postalCode: "110092",
 // const BRAND_TAGLINE = 'Premium Aluminium, ACP & Glass Work'
 
-// const BRAND_DESC    = '10+ years of experience delivering precision fabrication work across Delhi, Noida, and Gurgaon. Your trusted partner for commercial and residential projects.'
+// const BRAND_DESC    = '10+ years of experience creating precision fabrication work across Delhi, Noida, and Gurgaon. Your trusted partner for commercial and residential projects.'
 
   services: [
     "ACP Cladding",
@@ -86,7 +86,7 @@ export const servicesSchema = [
   export const testimonialsList = [
       {
         author: "Rahul Sharma",
-        reviewBody: "The glass partition for our office was executed perfectly. Great quality and timely delivery.",
+        reviewBody: "The glass partition for our office was executed perfectly. Great quality and timely completion.",
         rating: 5,
         location: "Meerut"
       },

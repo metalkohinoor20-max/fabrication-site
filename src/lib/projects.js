@@ -19,7 +19,7 @@ export const projects = [
     "Executed high-quality ACP cladding and aluminium framework for a hotel in Kashmir, ensuring durability, modern aesthetics, and weather resistance.",
 
   description:
-    "This project involved complete ACP cladding and aluminium fabrication work for a hotel property in Kashmir. The objective was to enhance the building’s exterior with a modern, premium finish while ensuring long-term durability in harsh weather conditions.\n\nWe used high-grade ACP sheets along with a strong aluminium support structure to deliver a clean, seamless look. The installation was carried out with precision, maintaining alignment, structural strength, and aesthetic appeal. The final outcome not only improved the visual appearance of the property but also provided protection against environmental factors.",
+    "This project involved complete ACP cladding and aluminium fabrication work for a hotel property in Kashmir. The objective was to enhance the building’s exterior with a modern, premium finish while ensuring long-term durability in harsh weather conditions.\n\nWe used high-grade ACP sheets along with a strong aluminium support structure to achieve a clean, seamless look. The installation was carried out with precision, maintaining alignment, structural strength, and aesthetic appeal. The final outcome not only improved the visual appearance of the property but also provided protection against environmental factors.",
 
   features: [
     "4mm Premium ACP Sheets",
@@ -66,7 +66,7 @@ export const projects = [
   showOnHome: true,
 
   shortDescription:
-    "High-quality ACP cladding and aluminium work for a hotel in Pahalgam, delivering a strong, weather-resistant and modern exterior finish.",
+    "High-quality ACP cladding and aluminium work for a hotel in Pahalgam, creating a strong, weather-resistant and modern exterior finish.",
 
   description:
     "This project involved ACP cladding and aluminium fabrication work for a hotel located in Pahalgam, Kashmir. The goal was to create a durable and visually appealing structure that can withstand harsh weather conditions.\n\nWe used premium 3mm ACP sheets along with a strong aluminium framework to ensure long-term durability and structural strength. The work was completed with precision, focusing on proper alignment, clean finishing, and high-quality installation standards.\n\nThe final outcome provided a modern look with excellent weather resistance, making it ideal for hospitality environments in hilly regions.",
@@ -116,7 +116,7 @@ export const projects = [
 //   showOnHome: false,
 
 //   shortDescription:
-//     "ACP cladding and aluminium fabrication work for a commercial mall in Chandigarh, delivering a modern and durable finish for high-traffic areas.",
+//     "ACP cladding and aluminium fabrication work for a commercial mall in Chandigarh, creating a modern and durable finish for high-traffic areas.",
 
 //   description:
 //     "This project involved aluminium and ACP fabrication work for a commercial mall in Chandigarh. The objective was to enhance the structure with a clean, modern, and durable finish suitable for a high-footfall commercial environment.\n\nHigh-quality ACP sheets and strong aluminium support were used to ensure long-term durability, structural strength, and resistance to weather conditions. The work was executed with precision, maintaining proper alignment and finishing standards.\n\nThe final result provided an aesthetically appealing and low-maintenance solution, ideal for commercial spaces with multiple retail outlets.",
@@ -174,7 +174,7 @@ export const projects = [
     "Durable and waterproof ACP and aluminium work for a residential flat in Ghaziabad with strong build quality and clean finishing.",
 
   description:
-    "This project included ACP and aluminium work for a residential flat in Ghaziabad. The main focus was to deliver a strong, waterproof, and long-lasting structure with a clean and modern finish.\n\nWe used high-quality 3mm ACP sheets supported by a robust 18 gauge aluminium framework to ensure durability and resistance against environmental factors. Special attention was given to waterproofing, strength, and finishing quality.\n\nThe final result offered a reliable and aesthetically pleasing solution suitable for residential use, combining durability with modern design.",
+    "This project included ACP and aluminium work for a residential flat in Ghaziabad. The main focus was to create a strong, waterproof, and long-lasting structure with a clean and modern finish.\n\nWe used high-quality 3mm ACP sheets supported by a robust 18 gauge aluminium framework to ensure durability and resistance against environmental factors. Special attention was given to waterproofing, strength, and finishing quality.\n\nThe final result provided a reliable and aesthetically pleasing solution suitable for residential use, combining durability with modern design.",
 
   features: [
     "3mm ACP Sheets",

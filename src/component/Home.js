@@ -56,11 +56,7 @@ const PROJECTS = projects.filter(project => project.showOnHome)
   }))
 
 
-const TESTIMONIALS = [
-  { id: 1, name: 'Rahul Sharma', location: 'Meerut', rating: 5, text: 'The glass partition for our office was executed perfectly. Great quality and timely delivery.' },
-  { id: 2, name: 'Priya Gupta', location: 'Delhi', rating: 5, text: 'Our shop\'s ACP front looks exactly how we imagined. Clean finish and professional work.' },
-  { id: 3, name: 'Mohit Verma', location: 'Ghaziabad', rating: 4, text: 'Installed UPVC windows — the soundproofing is impressive. Smooth experience overall.' },
-]
+
 
 const STATS = [
   { value: siteConfig.stats.projects, label: 'Projects Completed' },
@@ -357,7 +353,7 @@ const page = () => {
             <p className="mb-2 text-sm font-medium text-green-600">Projects</p>
             <h2 className="text-3xl font-bold text-black sm:text-4xl">Our Work in Action</h2>
             <p className="mx-auto mt-3 max-w-xl text-gray-600">
-              Real projects, real results — see the quality we deliver.
+              Real projects, real results — see the quality we create.
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

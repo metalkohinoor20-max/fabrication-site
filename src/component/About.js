@@ -45,7 +45,7 @@ const OWNER = {
   location: siteConfig.location,
   phone: siteConfig.phone,
   profileImage: "/about/profile.jpg",
-  bio: `With over a decade of hands-on experience in the fabrication industry, I've built a reputation for delivering precision work that stands the test of time. From sleek ACP cladding on commercial facades to robust aluminium door and window installations for residences, every project gets my full attention — from measurement to final handover. I take pride in doing the job right the first time, keeping my clients informed, and never cutting corners on quality. Based in ${siteConfig.location}, I'm available for projects across ${siteConfig.location}.`,
+  bio: `With over a decade of hands-on experience in the fabrication industry, I've built a reputation for executing precision work that stands the test of time. From sleek ACP cladding on commercial facades to robust aluminium door and window installations for residences, every project gets my full attention — from measurement to final handover. I take pride in doing the job right the first time, keeping my clients informed, and never cutting corners on quality. Based in ${siteConfig.location}, I'm available for projects across ${siteConfig.location}.`,
 }
 
 const SERVICES_LIST = [
@@ -72,7 +72,7 @@ const USPS = [
   },
   {
     icon: Clock,
-    title: "On-Time Delivery",
+    title: "On-Time Completion", 
     desc: "Timelines are commitments, not estimates. We plan projects carefully and keep you updated at every step.",
   },
   {
@@ -321,7 +321,7 @@ const About = () => {
           <SectionHeading
             eyebrow="Why Choose Us"
             title="What Sets Us Apart"
-            subtitle="We don't just fabricate — we take ownership of every project and deliver results you'll be proud to show off."
+            subtitle="We don't just fabricate — we take ownership of every project and produce results you'll be proud to show off."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {USPS.map((usp) => (

@@ -48,11 +48,11 @@ const Navbar = () => {
         {/* ── Brand ── */}
      <Link href="/" className="flex items-center gap-2.5 group">
   <Image
-    src="/logo.png"
+    src="/logo7.png"
     alt={BRAND_NAME}
     width={160}
-    height={80}
-    className="h-15 w-auto object-contain"
+    height={95}
+    className="h-15.5  w-auto object-contain"
     priority
   />
 </Link>

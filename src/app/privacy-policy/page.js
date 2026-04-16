@@ -35,7 +35,7 @@ const page = () => {
           <section>
             <h2 className="text-xl font-semibold text-black mb-2">Data Sharing</h2>
             <p>
-              We do not sell or share your personal information with third parties, except when required for service delivery or legal compliance.
+              We do not sell or share your personal information with third parties, except when required for service  or legal compliance.
             </p>
           </section>
 
