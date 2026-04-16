@@ -6,7 +6,7 @@ import ProjectsClient from '@/component/ProjectsList';
 export const metadata = {
   title: 'Our Projects | Metal Kohinoor - Fabrication Work Portfolio',
   description: 'Explore our portfolio of premium fabrication projects including ACP cladding, glass partitions, aluminium windows, and more. 100+ successful projects across Delhi NCR.',
-  keywords: 'fabrication projects, ACP work portfolio, glass partition projects, aluminium windows, metal fabrication delhi',
+  keywords: 'fabrication projects, ACP work portfolio, glass partition projects, aluminium windows, metal fabrication delhi, metal kohinoor projects, sonu fabrication portfolio, sonu fabricator, metal kohinoor',
   openGraph: {
     title: 'Metal Kohinoor Projects Portfolio',
     description: 'View our completed fabrication projects - ACP cladding, glass work, aluminium installations',

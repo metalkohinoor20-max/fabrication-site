@@ -17,7 +17,8 @@ export const metadata = {
     `fabrication contractor ${siteConfig.location}`,
     `${siteConfig.businessName} about`,
     "metal kohinoor",
-    "sonu fabricator"
+    "sonu fabricator",
+    "sonu fabrication"
   ],
   openGraph: {
     title: `About ${siteConfig.businessName} — ${siteConfig.stats.experience} Years of Precision Fabrication`,

@@ -23,7 +23,7 @@ export const metadata = {
     template: `%s | ${siteConfig.businessName}`
   },
   description: `${siteConfig.description} ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects completed. Specialists in ACP cladding, glass partitions, aluminium windows & UPVC work. Free quote within 1 hour.`,
-  keywords: `fabrication services ${siteConfig.city.toLowerCase()}, acp cladding ${siteConfig.city.toLowerCase()}, glass partition ${siteConfig.city.toLowerCase()}, aluminium windows ${siteConfig.city.toLowerCase()}, upvc work, metal fabrication, shop front fabrication, aluminium door manufacturer, glass railing installation, aluminium window manufacturer, acp sheet installation, glass partition office`,
+  keywords: `fabrication services ${siteConfig.city.toLowerCase()}, acp cladding ${siteConfig.city.toLowerCase()}, glass partition ${siteConfig.city.toLowerCase()}, aluminium windows ${siteConfig.city.toLowerCase()}, upvc work delhi ncr, metal fabrication noida, shop front fabrication gurgaon, aluminium door manufacturer, glass railing installation, acp sheet installation, glass partition office, aluminium louvers, metal kohinoor delhi, sonu fabrication noida, metal kohinoor`,
   authors: [{ name: siteConfig.owner, url: 'https://metalkohinoor.com' }],
   creator: siteConfig.businessName,
   publisher: siteConfig.businessName,

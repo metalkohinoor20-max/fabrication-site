@@ -5,9 +5,9 @@ import { servicesSchema ,testimonialsList,siteConfig } from '@/lib/config/site';
 export const metadata = {
   title: `${siteConfig.businessName} | Premium Fabrication Services in Delhi NCR`,
   description: `${siteConfig.description} ${siteConfig.stats.experience} experience, ${siteConfig.stats.projects} projects completed. Specialists in ACP cladding, glass partitions, aluminium windows & UPVC work. Free quote within 1 hour.`,
-  keywords: `fabrication services delhi, acp cladding noida, glass partition gurgaon, aluminium windows delhi, upvc work, metal fabrication, shop front fabrication, aluminium door manufacturer, glass railing installation`,
+  keywords: `fabrication services delhi, acp cladding noida, glass partition gurgaon, aluminium windows delhi, upvc work, metal fabrication, shop front fabrication, aluminium door manufacturer, glass railing installation,metal kohinoor, sonu fabrication noida, metal kohinoor`,
   openGraph: {
-    title: `${siteConfig.businessName} | Professional Fabrication Services Delhi NCR`,
+    title: `${siteConfig.businessName} | Professional Fabrication Services ${siteConfig.location}`,
     description: `${siteConfig.stats.experience} of expertise in ACP, Glass, Aluminium & UPVC work. ${siteConfig.stats.projects}+ projects completed. Get free quote today!`,
     url: 'https://metalkohinoor.com',
     siteName: siteConfig.businessName,

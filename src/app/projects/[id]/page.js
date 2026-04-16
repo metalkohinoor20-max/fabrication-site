@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   return {
     title: project.seo?.title || `${project.title} | Metal Kohinoor Projects`,
     description: project.seo?.description || project.shortDescription || project.description.substring(0, 160),
-    keywords: `${project.category}, fabrication projects, ${project.location}, metal work, ACP cladding, glass partition, aluminium windows`,
+    keywords: `${project.category}, fabrication projects, ${project.location}, metal work, ACP cladding, glass partition, aluminium windows, upvc work, metal fabrication, metal kohinoor projects, sonu fabrication portfolio, sonu fabricator`,
     openGraph: {
       title: project.seo?.title || project.title,
       description: project.seo?.description || project.shortDescription,

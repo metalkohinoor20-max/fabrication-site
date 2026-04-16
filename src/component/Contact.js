@@ -305,7 +305,7 @@ Message: ${message}`
                   {siteConfig.working_hours}. Our team will answer your questions on the spot.
                 </p>
                 <Link
-                  href={`tel:+91${WHATSAPP_NUMBER}`}
+                  href={`tel:${WHATSAPP_NUMBER}`}
                   onClick={() => {
                     if (typeof window !== "undefined" && window.fbq) {
                       window.fbq("track", "Contact", {

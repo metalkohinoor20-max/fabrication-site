@@ -9,12 +9,12 @@ export const siteConfig = {
   whatsappMsg: "Hi, I would like to enquire about your fabrication services (ACP / Glass / Aluminium). Please share details.",
   description: "Professional Aluminium Fabricator with 10+ years of experience in ACP, Glass & Aluminium work.",
   working_hours: "Mon-Fri: 9am - 7pm",
-  city: "Delhi NCR",
+  city: "Delhi, Noida, Gurgaon, Ghaziabad, Meerut",
   state: "Delhi",
-  areaServed: ["Delhi", "Noida", "Gurgaon"],  
+  areaServed: ["Delhi", "Noida", "Gurgaon", "Ghaziabad", "Meerut"],  
   foundingYear: "2014",
   numberOfEmployees: "15",
-  postalCode: "110092",
+  postalCode: ["110031", "201301", "122001", "201001", "250001"],
 // const BRAND_TAGLINE = 'Premium Aluminium, ACP & Glass Work'
 
 // const BRAND_DESC    = '10+ years of experience creating precision fabrication work across Delhi, Noida, and Gurgaon. Your trusted partner for commercial and residential projects.'
