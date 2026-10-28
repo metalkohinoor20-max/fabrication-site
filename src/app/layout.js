@@ -94,7 +94,6 @@ export const metadata = {
       },
     ],
   },
-  manifest: '/site.webmanifest',
 };
 
 // ✅ VIEWPORT - Separate export for viewport related properties

@@ -1,8 +1,8 @@
 export const siteConfig = {
   businessName: "Metal Kohinoor",
   owner: "Sonu",
-  phone: "+919797928168",
-  whatsapp: "919797928168",
+  phone: "+919717978168",
+  whatsapp: "919717978168",
   email: "metalkohinoor20@gmail.com",
   location: "Shahid Nagar Metro Station kalyan chownk, Delhi, India",
     addressLine2: "Noida / Gurgaon, India",
@@ -51,7 +51,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/metalkohinoor",
     linkedin: "https://www.linkedin.com/company/metalkohinoor",
     youtube: "https://www.youtube.com/@metalkohinoor",
-    whatsappLink: "https://wa.me/919797928168",
+    whatsappLink: "https://wa.me/919717978168",
     twitterHandle: "metalkohinoor"
   },
 }

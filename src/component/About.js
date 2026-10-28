@@ -88,9 +88,9 @@ const USPS = [
 ]
 
 const WORK_IMAGES = [
-  { src: "/about/work1.jpg", alt: "ACP cladding work on commercial building" },
-  { src: "/about/work2.jpg", alt: "Aluminium window installation project" },
-  { src: "/about/work3.jpg", alt: "Glass partition work for corporate office" },
+  { src: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kahsmir%20gulmarg%202.jfif", alt: "ACP cladding work on commercial building" },
+  { src: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/ghaziabad%20rajbagh.jfif", alt: "Aluminium window installation project" },
+  { src: "https://pub-2d2c2a5ee08a4562851348b30767ab78.r2.dev/kashmir%20pehelgam%202.jfif", alt: "Glass partition work for corporate office" },
 ]
 
 // ─── SUBCOMPONENTS ────────────────────────────────────────────────────────────
